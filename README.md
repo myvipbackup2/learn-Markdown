@@ -174,9 +174,9 @@ _无序列表使用-、+和*作为列表标记_：
 链接又分为行内式、参考式和 自动链接：
 
 ```markdown
-这是行内式链接：[ConnorLin's Blog](http://connorlin.github.io)。
+这是行内式链接：[Fly.Lee's Blog](http://blog.lizixiang.cn)。
 
-这是参考式链接：[ConnorLin's Blog][url]，其中url为链接标记，可置于文中任意位置。
+这是参考式链接：[Fly.Lee's Blog][url]，其中url为链接标记，可置于文中任意位置。
 
 [url]: http://blog.lizixiang.cn/ "Fly.Lee's Blog"
 
@@ -191,9 +191,9 @@ _无序列表使用-、+和*作为列表标记_：
 
 **效果如下：**
 
-这是行内式链接：[ConnorLin's Blog](http://connorlin.github.io)。
+这是行内式链接：[Fly.Lee's Blog](http://blog.lizixiang.cn)。
 
-这是参考式链接：[ConnorLin's Blog][url]，其中url为链接标记，可置于文中任意位置。
+这是参考式链接：[Fly.Lee's Blog][url]，其中url为链接标记，可置于文中任意位置。
 
 [url]: http://blog.lizixiang.cn/ "Fly.Lee's Blog"
 
@@ -204,4 +204,86 @@ _无序列表使用-、+和*作为列表标记_：
 这是图片：![][avatar]
 
 [avatar]: https://avatars1.githubusercontent.com/u/19941690?v=3&s=460
+
+### 代码
+
+代码分为行内代码和代码块。
+
+* 行内代码使用 `代码` 标识，可嵌入文字中
+* 代码块使用4个空格或```标识
+
+```
+这里是代码
+```
+
+代码语法高亮在 ```后面加上空格和语言名称即可
+
+``` 语言
+//注意语言前面有空格
+这里是代码
+```
+
+**例如：**
+
+这是行内代码`export default Comment;`的例子。
+
+这是代码块和语法高亮：
+
+```markdown
+    ``` javascript
+    // 注意javascript前面有空格
+    import React from 'react'
+    import {Avatar, Timeline} from 'antd'
+    
+    class Comment extends React.Component {
+        render() {
+            return (
+                <div style={{overflow: 'hidden'}}>
+                    <Avatar style={{float: 'left', backgroundColor: this.props.color}}
+                            size="large">{this.props.author}</Avatar>
+                    <Timeline style={{float: 'left', marginLeft: '3%', width: '80%'}}>
+                        <Timeline.Item>{this.props.date}</Timeline.Item>
+                        <Timeline.Item>{this.props.children}</Timeline.Item>
+                    </Timeline>
+                </div>
+            );
+        }
+    }
+    
+    export default Comment;
+    ```
+```
+**效果如下：**
+``` javascript
+    // 注意javascript前面有空格
+    import React from 'react'
+    import {Avatar, Timeline} from 'antd'
+    
+    class Comment extends React.Component {
+        render() {
+            return (
+                <div style={{overflow: 'hidden'}}>
+                    <Avatar style={{float: 'left', backgroundColor: this.props.color}}
+                            size="large">{this.props.author}</Avatar>
+                    <Timeline style={{float: 'left', marginLeft: '3%', width: '80%'}}>
+                        <Timeline.Item>{this.props.date}</Timeline.Item>
+                        <Timeline.Item>{this.props.children}</Timeline.Item>
+                    </Timeline>
+                </div>
+            );
+        }
+    }
+    
+    export default Comment;
+```
+
+### 表格
+
+* 表格对齐格式
+
+1. 居左：:----
+2. 居中：:----:或-----
+3. 居右：----:
+
+例子：
 
