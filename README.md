@@ -375,14 +375,14 @@ ___
 ### 字体
 
 ```html
-<font face="微软雅黑" color="red" size="6">字体及字体颜色和大小</font>
-<font color="#0000ff">字体颜色</font>
+<font face="微软雅黑" color="blue" size="6">字体及字体颜色和大小</font>
+<font color="orange">字体颜色</font>
 ```
 
 **效果如下：**
 
-<font face="微软雅黑" color="#f90" size="6">字体及字体颜色和大小</font>
-<font color="f60">字体颜色</font>
+<font face="微软雅黑" color="blue" size="6">字体及字体颜色和大小</font>
+<font color="orange">字体颜色</font>
 
 ***
 
